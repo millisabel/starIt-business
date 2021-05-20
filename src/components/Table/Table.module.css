@@ -22,6 +22,14 @@ th[title="Toggle SortBy"]:hover{
     background: var(--other-color);
 }
 
+td{
+    text-align: center;
+}
+
+td[data-label="note"] {
+    text-align: left;
+}
+
 td {
     border: 1px solid var(--text-color);
     padding: 5px;
@@ -164,6 +172,7 @@ tbody tr:nth-child(even) {
         font-weight: bold;
         margin-right: 20px;
 
+        text-align: left;
         font-size: calc(var(--text-size) * 1.1);
         font-style: italic;
         color: var(--primary-color);
