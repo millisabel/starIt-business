@@ -1,0 +1,35 @@
+.wrap{
+    width: 100%;
+    height: auto;
+}
+
+.wrap__fixed{
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    right: 2%;
+    bottom: 2%;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94vw;
+    height: 96vh;
+
+    box-shadow: 2px 2px 15px var(--text-color);
+    background: var(--secondary-color);
+    overflow: hidden;
+}
+
+.wrap__fixed .img{
+    max-width: 100%;
+    height: auto;
+}
+
+.img{
+    display: block;
+    max-width: 50px;
+    height: auto;
+    margin: 0 auto;
+}
