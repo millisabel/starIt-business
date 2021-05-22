@@ -27,6 +27,8 @@ td{
     padding: 5px;
 
     text-align: center;
+
+    word-break: break-word;
 }
 
 
@@ -35,12 +37,12 @@ td[data-label="starts"]{
 }
 
 td[data-label="note"],
-td[data-label="address"] {
+td[data-label="objects name"] {
     text-align: left;
 }
 
 td[data-label="note"]:first-letter,
-td[data-label="address"]:first-letter {
+td[data-label="objects name"]:first-letter {
     text-transform: uppercase;
 }
 
@@ -48,7 +50,7 @@ td[data-label="note"] {
     width: 30%;
 }
 
-td[data-label="address"] {
+td[data-label="objects name"] {
     width: 15%;
 }
 
@@ -178,20 +180,23 @@ tbody tr:hover {
         width: auto;
         border: none;
         border-bottom:  1px solid var(--secondary-color);
-
-        word-break: break-word;
     }
 
     td[data-label="note"],
     td[data-label="starts"],
-    td[data-label="address"] {
+    td[data-label="objects name"] {
         width: auto;
+    }
+
+    td[data-label="note"],
+    td[data-label="objects name"] {
+        text-align: right;
     }
 
     tbody td::before {
         content: attr(data-label);
 
-        width: 70px;
+        width: 100px;
         font-weight: bold;
         margin-right: 20px;
 

@@ -17,8 +17,8 @@ const getRandomDate = (start, end) => {
 const newObject = (count) => {
     return {
         id: count,
-        address: namor.generate({words: 3, separator: ' ', numbers: 0}),
-        starts: Math.floor((Math.random() * 5) + 1),
+        'objects name': namor.generate({words: 3, separator: ' ', numbers: 0}),
+        stars: Math.floor((Math.random() * 5) + 1),
         note: namor.generate({words: 4, separator: ' '}),
         photo: <Image alt='img' src='./logo192.png'/>,
         date: getRandomDate(new Date(2015, 1, 1), new Date()),

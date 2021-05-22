@@ -16,8 +16,8 @@ const Feedbacks = () => {
                         accessor: 'id',
                     },
                     {
-                        Header: <span>Address/ <br/> Object name</span>,
-                        accessor: 'address',
+                        Header: 'Objects name',
+                        accessor: 'objects name',
                     },
                 ]
             },
@@ -28,8 +28,8 @@ const Feedbacks = () => {
 
                 columns: [
                     {
-                        Header: 'Starts',
-                        accessor: 'starts',
+                        Header: 'Stars',
+                        accessor: 'stars',
                         sortType: 'number',
                     },
                     {
