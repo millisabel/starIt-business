@@ -33,14 +33,15 @@ function Table({columns, data}) {
         useSortBy,
         usePagination,);
     return (
-        // <div>
         <div className={table.wrap}>
             <table {...getTableProps()} className={table.box}>
                 <thead className={table.header}>
                 {headerGroups.map(headerGroup => (
                     <tr {...headerGroup.getHeaderGroupProps()}>
                         {headerGroup.headers.map(column => (
-                            <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                            <th {...column.getHeaderProps(column.getSortByToggleProps())}
+                                rowSpan={column.rowspan?'2':null}
+                            >
                                 {column.render('Header')}
                                 <span>{
                                     column.disableSortBy ?
@@ -73,7 +74,7 @@ function Table({columns, data}) {
                     <span className={table.pagination_text}>Go to page:{' '}
                     </span>
                     <input
-                        min={0}
+                        min={1}
                         max={pageOptions.length}
                         type="number"
                         defaultValue={pageIndex + 1}

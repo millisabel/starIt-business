@@ -8,7 +8,6 @@ const Feedbacks = () => {
         () => [
             {
                 Header: ' ',
-                accessor: ' ',
                 disableSortBy: true,
 
                 columns: [
@@ -17,29 +16,29 @@ const Feedbacks = () => {
                         accessor: 'id',
                     },
                     {
-                        Header: 'address',
+                        Header: <span>Address/ <br/> Object name</span>,
                         accessor: 'address',
                     },
                 ]
             },
             {
-                Header: 'feedback',
+                Header: 'Feedback',
                 accessor: 'feedback',
                 disableSortBy: true,
 
                 columns: [
                     {
-                        Header: 'starts',
+                        Header: 'Starts',
                         accessor: 'starts',
                         sortType: 'number',
                     },
                     {
-                        Header: 'note',
+                        Header: 'Note',
                         accessor: 'note',
                         disableSortBy: true,
                     },
                     {
-                        Header: 'photo',
+                        Header: 'Photo',
                         accessor: 'photo',
                         disableSortBy: true,
                     },
@@ -52,7 +51,7 @@ const Feedbacks = () => {
 
                 columns: [
                     {
-                        Header: 'date',
+                        Header: 'Date',
                         accessor: 'date',
                         Cell: row => <span>
                        {
@@ -61,12 +60,12 @@ const Feedbacks = () => {
                          </span>
                     },
                     {
-                        Header: 'time',
+                        Header: 'Time',
                         accessor: 'time',
                         disableSortBy: true,
                     },
                     {
-                        Header: 'reaction',
+                        Header: 'Reaction',
                         accessor: 'reaction',
                         disableSortBy: true,
                     },
@@ -78,7 +77,7 @@ const Feedbacks = () => {
 
     return (
         <div>
-            <Table columns={columns} data = {data}/>
+            <Table columns={columns} data={data}/>
         </div>
     );
 };

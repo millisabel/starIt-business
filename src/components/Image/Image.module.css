@@ -1,6 +1,7 @@
 .wrap{
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
 
 .wrap__fixed{
@@ -32,4 +33,9 @@
     max-width: 50px;
     height: auto;
     margin: 0 auto;
+}
+
+.wrap:hover .img{
+    transform: translate(1.2);
+    cursor: pointer;
 }

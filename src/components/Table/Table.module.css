@@ -1,4 +1,3 @@
-
 .box{
     width:100%;
     border-collapse: collapse;
@@ -23,16 +22,21 @@ th[title="Toggle SortBy"]:hover{
 }
 
 td{
+    width: 10%;
+    border: 1px solid var(--secondary-color);
+    padding: 5px;
+
     text-align: center;
 }
 
 td[data-label="note"] {
     text-align: left;
+    width: 40%;
 }
 
-td {
-    border: 1px solid var(--text-color);
-    padding: 5px;
+td[data-label="address"] {
+    text-align: left;
+    width: 20%;
 }
 
 tbody tr:nth-child(odd) {
@@ -41,6 +45,11 @@ tbody tr:nth-child(odd) {
 
 tbody tr:nth-child(even) {
     background: rgba(var(--primary), 0.3);
+}
+
+tbody tr:hover {
+    box-shadow: 0 0 25px grey;
+    background: linear-gradient(-45deg, rgba(var(--other), 0.3), rgba(var(--other), 0.7), rgba(var(--other), 0.3));
 }
 
 .pagination{
@@ -58,10 +67,6 @@ tbody tr:nth-child(even) {
 
     background: var(--primary-color);
     box-shadow: -2px 0  2px var(--primary-color);
-}
-
-.pagination_item{
-
 }
 
 .pagination_text{
@@ -125,7 +130,8 @@ tbody tr:nth-child(even) {
     }
 
     .header th[title="Toggle SortBy"]{
-        display: block;
+        display: flex;
+        align-items: center;
         flex-grow: 1;
 
         color: var(--text-color);
@@ -145,6 +151,31 @@ tbody tr:nth-child(even) {
         gap: 15px;
     }
 
+    .pagination_btn{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        border-radius: 50%;
+
+        font-size: calc(var(--text-size) * 1.6);
+    }
+
+    .pagination_input{
+        border-radius: 5%;
+
+        font-size: calc(var(--text-size) * 1.2);
+    }
+
+    .pagination_select{
+        border-radius: 5%;
+
+        font-size: calc(var(--text-size) * 1.2);
+    }
+
+    .pagination_btn:last-child{
+        margin-right: 0;
+    }
+
     tbody tr{
         margin-bottom: 10px;
     }
@@ -161,8 +192,16 @@ tbody tr:nth-child(even) {
         justify-content: space-between;
         align-items: center;
 
+        width: auto;
         border: none;
         border-bottom:  1px solid var(--secondary-color);
+
+        word-break: break-word;
+    }
+
+    td[data-label="note"],
+    td[data-label="address"] {
+        width: auto;
     }
 
     tbody td::before {
@@ -177,5 +216,4 @@ tbody tr:nth-child(even) {
         font-style: italic;
         color: var(--primary-color);
     }
-
 }
