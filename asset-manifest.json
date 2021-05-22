@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/starIt-business/static/css/main.92e676c6.chunk.css",
-    "main.js": "/starIt-business/static/js/main.df330a17.chunk.js",
-    "main.js.map": "/starIt-business/static/js/main.df330a17.chunk.js.map",
+    "main.js": "/starIt-business/static/js/main.c8354b08.chunk.js",
+    "main.js.map": "/starIt-business/static/js/main.c8354b08.chunk.js.map",
     "runtime-main.js": "/starIt-business/static/js/runtime-main.69f8ab62.js",
     "runtime-main.js.map": "/starIt-business/static/js/runtime-main.69f8ab62.js.map",
     "static/css/2.813f632c.chunk.css": "/starIt-business/static/css/2.813f632c.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.813f632c.chunk.css",
     "static/js/2.f757db8e.chunk.js",
     "static/css/main.92e676c6.chunk.css",
-    "static/js/main.df330a17.chunk.js"
+    "static/js/main.c8354b08.chunk.js"
   ]
 }
