@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/starIt-business/static/css/main.f67be7eb.chunk.css",
+    "main.css": "/starIt-business/static/css/main.45d7122b.chunk.css",
     "main.js": "/starIt-business/static/js/main.1596cdd4.chunk.js",
     "main.js.map": "/starIt-business/static/js/main.1596cdd4.chunk.js.map",
     "runtime-main.js": "/starIt-business/static/js/runtime-main.69f8ab62.js",
@@ -12,14 +12,14 @@
     "static/js/3.812762fc.chunk.js.map": "/starIt-business/static/js/3.812762fc.chunk.js.map",
     "index.html": "/starIt-business/index.html",
     "static/css/2.813f632c.chunk.css.map": "/starIt-business/static/css/2.813f632c.chunk.css.map",
-    "static/css/main.f67be7eb.chunk.css.map": "/starIt-business/static/css/main.f67be7eb.chunk.css.map",
+    "static/css/main.45d7122b.chunk.css.map": "/starIt-business/static/css/main.45d7122b.chunk.css.map",
     "static/js/2.f757db8e.chunk.js.LICENSE.txt": "/starIt-business/static/js/2.f757db8e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.69f8ab62.js",
     "static/css/2.813f632c.chunk.css",
     "static/js/2.f757db8e.chunk.js",
-    "static/css/main.f67be7eb.chunk.css",
+    "static/css/main.45d7122b.chunk.css",
     "static/js/main.1596cdd4.chunk.js"
   ]
 }
