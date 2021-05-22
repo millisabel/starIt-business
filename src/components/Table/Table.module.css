@@ -29,14 +29,27 @@ td{
     text-align: center;
 }
 
-td[data-label="note"] {
+
+td[data-label="starts"]{
+    width: 5%;
+}
+
+td[data-label="note"],
+td[data-label="address"] {
     text-align: left;
-    width: 40%;
+}
+
+td[data-label="note"]:first-letter,
+td[data-label="address"]:first-letter {
+    text-transform: uppercase;
+}
+
+td[data-label="note"] {
+    width: 30%;
 }
 
 td[data-label="address"] {
-    text-align: left;
-    width: 20%;
+    width: 15%;
 }
 
 tbody tr:nth-child(odd) {
@@ -146,6 +159,48 @@ tbody tr:hover {
         background: var(--other-color);
     }
 
+    tbody tr{
+        margin-bottom: 10px;
+    }
+
+    tbody tr {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom:  2px solid var(--primary-color);
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: auto;
+        border: none;
+        border-bottom:  1px solid var(--secondary-color);
+
+        word-break: break-word;
+    }
+
+    td[data-label="note"],
+    td[data-label="starts"],
+    td[data-label="address"] {
+        width: auto;
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+
+        width: 70px;
+        font-weight: bold;
+        margin-right: 20px;
+
+        text-align: left;
+        font-size: calc(var(--text-size) * 1.1);
+        font-style: italic;
+        color: var(--primary-color);
+    }
+
     .pagination{
         flex-direction: column;
         gap: 15px;
@@ -174,46 +229,5 @@ tbody tr:hover {
 
     .pagination_btn:last-child{
         margin-right: 0;
-    }
-
-    tbody tr{
-        margin-bottom: 10px;
-    }
-
-    tbody tr {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        border-bottom:  2px solid var(--primary-color);
-    }
-
-    tbody td {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        width: auto;
-        border: none;
-        border-bottom:  1px solid var(--secondary-color);
-
-        word-break: break-word;
-    }
-
-    td[data-label="note"],
-    td[data-label="address"] {
-        width: auto;
-    }
-
-    tbody td::before {
-        content: attr(data-label);
-
-        width: 70px;
-        font-weight: bold;
-        margin-right: 20px;
-
-        text-align: left;
-        font-size: calc(var(--text-size) * 1.1);
-        font-style: italic;
-        color: var(--primary-color);
     }
 }
