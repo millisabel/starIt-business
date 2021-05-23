@@ -16,7 +16,7 @@ const Feedbacks = () => {
                         accessor: 'id',
                     },
                     {
-                        Header: 'Objects name',
+                        Header: 'Object name',
                         accessor: 'objects name',
                     },
                 ]
