@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/starIt-business/static/css/main.92e676c6.chunk.css",
-    "main.js": "/starIt-business/static/js/main.c8354b08.chunk.js",
-    "main.js.map": "/starIt-business/static/js/main.c8354b08.chunk.js.map",
-    "runtime-main.js": "/starIt-business/static/js/runtime-main.69f8ab62.js",
-    "runtime-main.js.map": "/starIt-business/static/js/runtime-main.69f8ab62.js.map",
+    "main.css": "/starIt-business/static/css/main.8d114374.chunk.css",
+    "main.js": "/starIt-business/static/js/main.e28888d4.chunk.js",
+    "main.js.map": "/starIt-business/static/js/main.e28888d4.chunk.js.map",
+    "runtime-main.js": "/starIt-business/static/js/runtime-main.b0c5f767.js",
+    "runtime-main.js.map": "/starIt-business/static/js/runtime-main.b0c5f767.js.map",
     "static/css/2.813f632c.chunk.css": "/starIt-business/static/css/2.813f632c.chunk.css",
-    "static/js/2.f757db8e.chunk.js": "/starIt-business/static/js/2.f757db8e.chunk.js",
-    "static/js/2.f757db8e.chunk.js.map": "/starIt-business/static/js/2.f757db8e.chunk.js.map",
-    "static/js/3.812762fc.chunk.js": "/starIt-business/static/js/3.812762fc.chunk.js",
-    "static/js/3.812762fc.chunk.js.map": "/starIt-business/static/js/3.812762fc.chunk.js.map",
+    "static/js/2.f8941efd.chunk.js": "/starIt-business/static/js/2.f8941efd.chunk.js",
+    "static/js/2.f8941efd.chunk.js.map": "/starIt-business/static/js/2.f8941efd.chunk.js.map",
+    "static/js/3.e94d4f65.chunk.js": "/starIt-business/static/js/3.e94d4f65.chunk.js",
+    "static/js/3.e94d4f65.chunk.js.map": "/starIt-business/static/js/3.e94d4f65.chunk.js.map",
     "index.html": "/starIt-business/index.html",
     "static/css/2.813f632c.chunk.css.map": "/starIt-business/static/css/2.813f632c.chunk.css.map",
-    "static/css/main.92e676c6.chunk.css.map": "/starIt-business/static/css/main.92e676c6.chunk.css.map",
-    "static/js/2.f757db8e.chunk.js.LICENSE.txt": "/starIt-business/static/js/2.f757db8e.chunk.js.LICENSE.txt"
+    "static/css/main.8d114374.chunk.css.map": "/starIt-business/static/css/main.8d114374.chunk.css.map",
+    "static/js/2.f8941efd.chunk.js.LICENSE.txt": "/starIt-business/static/js/2.f8941efd.chunk.js.LICENSE.txt",
+    "static/media/Tabs.module.css": "/starIt-business/static/media/out.87ed1de3.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.69f8ab62.js",
+    "static/js/runtime-main.b0c5f767.js",
     "static/css/2.813f632c.chunk.css",
-    "static/js/2.f757db8e.chunk.js",
-    "static/css/main.92e676c6.chunk.css",
-    "static/js/main.c8354b08.chunk.js"
+    "static/js/2.f8941efd.chunk.js",
+    "static/css/main.8d114374.chunk.css",
+    "static/js/main.e28888d4.chunk.js"
   ]
 }
