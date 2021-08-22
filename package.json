@@ -15,7 +15,10 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2",
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "namor": "^2.0.3",
+    "password-hash": "^1.2.2",
+    "react-table": "^7.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,8 +47,5 @@
     ]
   },
   "devDependencies": {
-    "namor": "^2.0.3",
-    "password-hash": "^1.2.2",
-    "react-table": "^7.7.0"
   }
 }
