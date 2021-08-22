@@ -9,7 +9,7 @@ import Feedbacks from "../Feedbacks/Feedbacks";
 import tabs from "./Tabs.module.css";
 import 'react-responsive-tabs/styles.css';
 
-const Tabs = () => {
+const Tabs = ({isAuth, setAuth}) => {
 
     const items = [
         {
@@ -27,7 +27,7 @@ const Tabs = () => {
         {
             label: 'My Feedbacks',
             component: <Feedbacks/>
-        },
+        }
     ];
 
     function getTabs() {
@@ -40,13 +40,24 @@ const Tabs = () => {
         }));
     }
 
+    const out = () => {
+        setAuth(false);
+        if(sessionStorage.getItem("isAuth")){
+            sessionStorage.removeItem("isAuth")
+        }
+    };
+
     return (
-        <TabsResponsive items={getTabs()}
-                        transform = {false}
-                        transformWidth={600}
-                        tabsWrapperClass={tabs.list}
-                        panelClassName={tabs.body}
-        />
+        <>
+            <TabsResponsive items={getTabs()}
+                            transform={false}
+                            transformWidth={600}
+                            tabsWrapperClass={tabs.list}
+                            panelClassName={tabs.body}
+            />
+            <button className={tabs.btnOut} onClick={out}/>
+        </>
+
     );
 };
 

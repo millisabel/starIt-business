@@ -45,6 +45,7 @@
   "devDependencies": {
     "moment": "^2.29.1",
     "namor": "^2.0.3",
+    "password-hash": "^1.2.2",
     "react-table": "^7.7.0"
   }
 }

@@ -1,11 +1,12 @@
 :root{
-  --primary: 46, 112, 108;
+  --primary: 46, 112, 50;
   --other: 255, 152, 0;
 
   --text-color: #333;
-  --primary-color: rgb(var(--primary));
+  --primary-color: rgba(var(--primary), 1);
   --secondary-color: #fff;
   --other-color: #ff9800;
+  --error-color: #bc120d;
 
   --text-size: 12px;
 

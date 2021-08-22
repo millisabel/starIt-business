@@ -1,9 +1,20 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Table from "../Table/Table";
 import moment from "moment";
 import makeData from "../../makeData";
+// import namor from "namor";
+// import Image from "../Image/Image";
 
 const Feedbacks = () => {
+    const [jsonData, setJsonData] = useState({});
+    console.log(jsonData);
+
+    useEffect(() => {
+        fetch('https://starit-api.herokuapp.com/api/feedback')
+            .then(response => response.json())
+            .then(result => setJsonData(result));
+    }, []);
+
     const columns = React.useMemo(
         () => [
             {
@@ -23,7 +34,7 @@ const Feedbacks = () => {
             },
             {
                 Header: 'Feedback',
-                accessor: 'feedback',
+                // accessor: 'feedback',
                 disableSortBy: true,
 
                 columns: [
@@ -46,7 +57,7 @@ const Feedbacks = () => {
             },
             {
                 Header: ' ',
-                accessor: ' ',
+                // accessor: ' ',
                 disableSortBy: true,
 
                 columns: [
