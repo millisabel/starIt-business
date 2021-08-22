@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import auth from './Auth.module.css';
 import passwordHash from "password-hash";
-// import moment from "moment";
+import moment from "moment";
 
 const Auth = ({isAuth, setAuth}) => {
     // const requestURL='https://jsonplaceholder.typicode.com/users';
@@ -125,7 +125,7 @@ const Auth = ({isAuth, setAuth}) => {
         if (newUser) {
             let data = new FormData(document.querySelector('form'));
             data.set('pass_hash', passwordHash.generate(pass));
-            // data.set('last_visited', moment().format('YYYY-MM-DD H:mm:ss'));
+            data.set('last_visited', moment().format('YYYY-MM-DD H:mm:ss'));
             sendRequest(requestURL, data)
                 .then(response => {
                     setLoading(false);
